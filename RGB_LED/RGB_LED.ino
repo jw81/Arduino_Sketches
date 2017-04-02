@@ -2,23 +2,15 @@
 Adafruit Arduino - Lesson 3. RGB LED
 */
 
-int redPin1   = 11;
-int greenPin1 = 10;
-int bluePin1  = 9;
-
-int redPin2   = 6;
-int greenPin2 = 5;
-int bluePin2 = 3;
+int redPin   = 11;
+int greenPin = 10;
+int bluePin  = 9;
 
 void setup()
 {
-  pinMode(redPin1, OUTPUT);
-  pinMode(greenPin1, OUTPUT);
-  pinMode(bluePin1, OUTPUT); 
-  
-  pinMode(redPin2, OUTPUT);
-  pinMode(greenPin2, OUTPUT);
-  pinMode(bluePin2, OUTPUT); 
+  pinMode(redPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  pinMode(bluePin, OUTPUT); 
 }
 
 void loop()
@@ -49,11 +41,7 @@ void loop()
 
 void setColor(int red, int green, int blue)
 {
-  analogWrite(redPin1, red);
-  analogWrite(greenPin1, green);
-  analogWrite(bluePin1, blue);  
-  
-  analogWrite(redPin2, red);
-  analogWrite(greenPin2, green);
-  analogWrite(bluePin2, blue); 
+  analogWrite(redPin, red);
+  analogWrite(greenPin, green);
+  analogWrite(bluePin, blue);  
 }
